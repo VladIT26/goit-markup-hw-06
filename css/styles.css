@@ -658,6 +658,7 @@ body {
   align-items: center;
   letter-spacing: 0.06em;
   color: var(--secondary-bgc);
+  border: none;
 }
 
 .email-icon-send {
