@@ -812,6 +812,7 @@ body {
 }
 
 .checkbox-input {
+  appearance: none;
   display: block;
   margin-right: 8px;
 }
@@ -828,7 +829,7 @@ body {
   border-radius: 2px;
   border: 2px solid #2196f3;
   background-color: rgba(33, 150, 243, 1);
-  background-image: url(../images/);
+  background-image: url(../images/icon-check.svg);
 }
 .checkbox-text {
   font-size: 14px;
