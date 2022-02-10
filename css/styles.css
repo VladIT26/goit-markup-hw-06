@@ -501,8 +501,9 @@ body {
   display: flex;
   align-items: baseline;
 }
-/* .contacts-container {
-} */
+.contacts-container {
+  flex-grow: 1;
+}
 .join-container {
   margin-left: 70px;
 }
@@ -619,7 +620,6 @@ body {
 .email-container {
   margin-left: 93px;
   width: 570px;
-  position: relative;
 }
 
 .email-title {
@@ -632,7 +632,6 @@ body {
   margin-bottom: 20px;
 }
 .email-input {
-  position: absolute;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -643,8 +642,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .email-btn {
-  position: absolute;
-  left: 370px;
+  margin-left: 8px;
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
@@ -653,12 +651,12 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 0.06em;
   color: var(--secondary-bgc);
-  border: none;
+  border: transparent;
 }
 
 .email-icon-send {
@@ -701,10 +699,8 @@ body {
 
 .modal-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
+  top: 8px;
+  right: 8px;
   height: 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -722,6 +718,7 @@ body {
 }
 .modal-form {
   color: #212121;
+  padding: 40px;
 }
 .modal-title {
   font-weight: bold;
@@ -730,18 +727,18 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
 .form-field {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  width: 448px;
 }
+.form-field + .form-field {
+  margin-top: 10px;
+}
+
 .modal-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -765,7 +762,7 @@ body {
   position: absolute;
   display: flex;
   top: 50%;
-  margin-left: 12px;
+  left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -785,7 +782,6 @@ body {
   border-radius: 4px;
   padding: 12px 16px 12px 16px;
   resize: none;
-  margin-bottom: 20px;
 
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -804,6 +800,7 @@ body {
   align-items: center;
   /* margin-left: 52px;
   margin-right: 51px; */
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .checkbox-label {
@@ -852,6 +849,7 @@ body {
   align-items: center;
 }
 .modal-send-button {
+  border: transparent;
   display: flex;
   justify-content: center;
   text-align: center;
